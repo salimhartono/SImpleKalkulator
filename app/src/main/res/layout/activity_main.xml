@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4A148C"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/iv" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hasil"
+            android:textColor="#FFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!--text hasil-->
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#FFFF"
+            android:fontFamily="sans-serif-black"
+            android:padding="5dp"
+            android:text="-"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Masukan Agka Pertama"
+            android:textColor="#FFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--edit text angka pertama-->
+        <EditText
+            android:id="@+id/etPertama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#FFFF"
+            android:fontFamily="sans-serif-black"
+            android:hint="0"
+            android:padding="5dp"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Masukan Angka Kedua"
+            android:textColor="#FFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--edit text angka kedua-->
+        <EditText
+            android:id="@+id/etKedua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#FFFF"
+            android:fontFamily="sans-serif-black"
+            android:hint="0"
+            android:padding="5dp"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btBTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btCLear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#FF6F00"
+        android:text="about"/>
+
+</LinearLayout>
